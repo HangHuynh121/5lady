@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    animation: shakebody linear 8s infinite;
+}
+.sky{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.trees{
+    height: 94vh;
+    width: 100%;
+    background-image: url(trees.png);
+    background-size: cover; 
+    position: absolute;
+    top: -130px;
+}
+.track{
+    height: 60vh;
+    width: 800vw;
+    background-image: url(track.png);
+    background-repeat: repeat-x; 
+    position: absolute;
+    top: 70vh;
+    animation: carMove linear 0.3s infinite;
+
+}
+
+.car{
+    height: 120px;
+    width: 380px;
+    background-image: url(car_body.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 444px;
+    bottom:29vh;
+    animation: shake linear .6s infinite;
+
+}
+
+
+.wheel1 img{
+    width: 79px;
+    position: relative;
+    top:90px;
+    left:19px;
+    animation: wheelRotation linear .10s infinite;
+}
+
+
+.wheel2 img{
+    width: 90px;
+    position: relative;
+    top: -570px;
+    left: 270px;
+    animation: wheelRotation linear .10s infinite;
+
+}
+
+.che img{
+    width: 150px;
+    position: relative;
+    top: -140px;
+    left: 260px;
+
+}
+.dung img{
+    width: 150px;
+    position: relative;
+    top: -415px;
+    left: 120px;
+
+}
+.hang img{
+    width: 55px;
+    position: relative;
+    top: -302px;
+    left: 143px;
+
+}
+
+.ngoc img{
+    width: 77px;
+    position: relative;
+    top: -525px;
+    left: 40px;
+}
+
+.my img{
+    width: 54px;
+    position: relative;
+    top: -581px;
+    left: 82px;
+}
+
+
+@keyframes wheelRotation
+{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carMove
+{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes shake
+{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+@keyframes shakebody
+{
+    0%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
